@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      #retireAge:focus{
+          border: 2px solid rgb(57, 192, 233);
+      }
+      #retireAge{
+          border-radius: 2px;
+      }
+    #Age:focus{
+        border: 2px solid rgb(57, 192, 233);
+       
+      }
+      #Age{
+          border-radius: 2px;
+      }
+    
+    </style>
+</head>
+<body>
+    <div align="center">
+        <div id="header">
+            <h1 class="bg-dark h1 p-3 text-white text-center">Retirement Calculator</h1>
+        </div>
+        <section>
+            <form >
+                <p style="font-weight: bold; font-size: large; font-family:Georgia, 'Times New Roman', Times, serif;">How old Are you?</p>
+            <input type="number" placeholder="Enter Age" required id="Age" >
+             <br><br>
+
+             <p style="font-weight: bold; font-size: large; font-family:Georgia, 'Times New Roman', Times, serif;">At what age do you want to retire?</p>
+            
+
+                <input type="number" placeholder="Enter Age" required id="retireAge">
+            
+                <br><br>
+                <input type="submit" class="btn btn-dark" id="btn1">
+                <!-- <button class="btn btn-dark" id="btn1"  type="button">sample</button> -->
+            </form>
+           
+            
+            
+            
+
+             <div   style="display: none;"  id="results">
+                 <h2 id="res">Results</h2>
+             </div>
+
+            <div class="final" style="width: fit-content;display: none;border: 1px solid red;padding: 10px;">
+             <p class="bg-info h5  text-white text-center" id="finalScoreText"></p>
+             <p id="retire"></p>
+             <p id="result"></p>
+            </div>
+            
+
+        </section>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
